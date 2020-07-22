@@ -1,5 +1,4 @@
 # Linux
-Self discipline makes people strong！
 
 **46个Linux常见命令问题**
 https://www.cnblogs.com/passzhang/p/8552757.html
@@ -25,30 +24,6 @@ https://blog.csdn.net/shantf93/article/details/79775702
 	-L：选择显示的目录深度；
 	1：只显示一层深度，即不递归子目录；
 
-	实例1 [tree]：ubuntu@VM-0-4-ubuntu:/$ tree -d -L 1
-	.
-	├── bin
-	├── boot
-	├── data
-	├── dev
-	├── etc
-	├── home
-	├── lib
-	├── lib64
-	├── lost+found
-	├── media
-	├── mnt
-	├── opt
-	├── proc
-	├── root
-	├── run
-	├── sbin
-	├── snap
-	├── srv
-	├── sys
-	├── tmp
-	├── usr
-	└── var
 
 
 ## 为什么需要线程锁？ ##
@@ -56,6 +31,7 @@ https://blog.csdn.net/shantf93/article/details/79775702
 
 ## 弹性扩缩容，原理是什么? ##
 弹性伸缩（Auto Scaling）根据您的业务需求和伸缩策略，为您自动调整计算资源。您可设置定时、周期或监控策略，恰到好处地增加或减少CVM实例，并完成实例配置，保证业务平稳健康运行。在需求高峰期时，弹性伸缩自动增加CVM实例的数量，以保证性能不受影响；当需求较低时，则会减少CVM实例数量以降低成本。弹性伸缩既适合需求稳定的应用程序，同时也适合每天、每周、每月使用量不停波动的应用程序。
+
 ## 孤儿进程，僵尸进程 ##
 孤儿进程：一个父进程退出，而它的一个或多个子进程还在运行，那么那些子进程将成为孤儿进程。孤儿进程将被init进程(进程号为1)所收养，并由init进程对它们完成状态收集工作。
 
