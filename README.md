@@ -42,3 +42,5 @@
 
 ## 关于linux系统的的一些基础问答题
 	- https://blog.csdn.net/shantf93/article/details/79775702
+
+**<p align=right> ———业精于勤，荒于嬉；行成于思，毁于随！ </p>**
