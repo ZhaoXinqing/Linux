@@ -1,0 +1,40 @@
+Linux文件系统：
+    
+    - 目录结构：
+        /- 根目录：
+            - 每一个文件和目录都从从这里开始，只有root用户具有该目录下的写权限。此目录和/root目录不同，root目录是root用户的主目录。
+        bin – 用户二进制文件：
+            - 系统的所有用户使用的命令都设在这里，例如：ps，ls，ping，grep，cp等。
+        sbin – 系统二进制文件：
+            - 这个目录下的linux命令通常由系统管理员使用，对系统进行维护。例如：iptable，reboot，fdisk，ifconfig，swapon命令。
+        etc – 配置文件：
+            - 包含所有程序所需的配置文件。也包含了用于启动/停止单个程序的启动和关闭shell脚本。例如：/etc/resolv.conf、/etc/logrotate.conf
+        dev – 设备文件：
+            - 包含设备文件，这些包括终端设备、USB或连接到系统的任何设备。例如：/dev/tty1、/dev/usbmon0
+        proc – 进程信息：
+            - 包含系统进程的相关信息。这是一个虚拟的文件系统，包含有关正在运行的进程的信息。例如：/proc/{pid}目录中包含的与特定pid相关的信息。
+        var – 变量文件：
+            - var代表变量文件，这个目录下可以找到内容可能增长的文件。这包括 – 系统日志文件（/var/log）；包和数据库文件（/var/lib）；电子邮件（/var/mail）；打印队列（/var/spool）；锁文件（/var/lock）；多次重新启动需要的临时文件（/var/tmp）；
+        tmp – 临时文件：
+            - 包含系统和用户创建的临时文件。当系统重启时，这个目录下的文件都将被删除。
+        usr – 用户程序：
+            - 包含二进制文件、库文件、文档和二级程序源代码。
+            - usr/bin中包含用户程序的二进制文件。如果你在/bin中找不到用户二进制文件，在/usr/bin目录看看。例如：atd、cron、sshd、useradd、userdel。
+            - usr/lib中包含了/usr/bin和/usr/sbin用到的库。
+            - usr/local中包含了从源安装的用户程序。例如，当你从源安装Apache，它会在/usr/local/apach2中。
+        home – Home目录：
+            - 所有用户用home目录来存储他们的个人档案。例如：/home/join、/home/nikita
+        boot – 引导加载程序文件：
+            - 包含引导加载程序相关文件。内核的initrd、vmlinux、grub文件位于/boot下。例如：initrd.img-2.6.32-24-generic、vmlinuz-2.6.32-24-generic、vmlinuz-2.6.32-24-generic
+        lib – 库：
+            - 包含支持位于/bin和/sbin下的二进制文件的库文件，库文件名为 id*或lib*.so.*  。例如：Id-2.11.1.so，libncurses.so.5.7
+        opt – 可选的附加应用程序：
+            - opt代表opitional；包含从个别厂商的附加应用程序。附加应用程序应该安装在/opt/或者/opt/的子目录下。
+        mnt – 挂载目录：
+            - 临时安装目录，系统管理员可以挂载文件系统。
+        media – 可移动媒体设备：
+            - 用于挂载可移动设备的临时目录。举例来说，挂载CD-ROM的media/cdrom，挂载软盘驱动器的/media/floppy；
+        srv – 服务数据：
+            - srv代表服务。包含服务器特定服务相关的数据，例如，/srv/cvs包含cvs相关的数据。
+
+    - 目前Linux系统上使用最广泛的则是ext3 或ext4文件系统。当Linux系统引导启动时，Linux启动盘加载根文件系统时，会根据启动盘上引导扇区第509、510字节处一个字 (ROOT_DEV) 中的跟文件系统设备号从指定设备中加载根文件系统（若设备号是0，则从引导盘所在的当前驱动器中加载根文件系统），默认使用的文件系统是根文件系统。其中包括规定的目录、配置文件、设备驱动程序、开发程序以及所有其他用户数据或文本文件等。
