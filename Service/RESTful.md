@@ -1,8 +1,9 @@
-api：
-    - 应用项目接口（Application Program Interface)
-    - 随处可见
-    - 提供一个软件到另一个的连接；
-    - 由请求和响应构成；
+### api：
+
+​    - 应用项目接口（Application Program Interface)
+​    - 随处可见
+​    - 提供一个软件到另一个的连接；
+​    - 由请求和响应构成；
 
 REST：
     - 资源（Resources）
@@ -17,13 +18,13 @@ REST：
     　　（1）每一个URI代表一种资源；
     　　（2）客户端和服务器之间，传递这种资源的某种表现层；
     　　（3）客户端通过四个HTTP动词，对服务器端资源进行操作，实现"表现层状态转化"。
-
+    
     - HTTP methods：
         get:获取特定资源
         post:提交……
         put：更新……
         delete：删除……
-
+    
         head：不返回body的get
         options：返回支持的http方法
         patch:更新部分资源
