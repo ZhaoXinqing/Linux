@@ -2,6 +2,14 @@
 	- 登录：Zhao0216
 	- 清屏：clear
 
+// 仅打包，不压缩
+tar -cvf /home/w/images.tar /home/w/images
+// 打包后，以gzip压缩
+tar -zcvf /home/w/images.tar.gz /home/w/images
+// 解压tgz
+tar zxvf test.tgz -C 指定目录
+
+
 	- 【查看文件树结构】
 		安装tree: sudo apt-get install tree
 		使用方法及参数：tree -d -L 1
