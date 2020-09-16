@@ -1,6 +1,0 @@
-linux题：https://blog.csdn.net/shantf93/article/details/79775702
-Linux题(2020版)：https://blog.csdn.net/ThinkWon/article/details/104588679
-
-命令：https://www.runoob.com/linux/linux-command-manual.html
-    - 总结：https://www.cnblogs.com/passzhang/p/8552757.html
-
